@@ -1,12 +1,12 @@
 ##############################################################################################
-###                              @AUTHOR: Ediv‚nia Pontes                                  ###
+###                              @AUTHOR: Ediv√¢nia Pontes                                  ###
 ###                                 @DATE: 27/11/2019                                      ###
 ##############################################################################################
 
 # PREENCHE ARRAY DE TAMANHO 10 COM NUMEROS RANDOMICOS DE 0 A 9
 
 .data
-	myArray: .space 40 # aloca espaÁo no random access memory
+	myArray: .space 40 # aloca espa√ßo no random access memory
 	
 	msg1: .asciiz "*** preenchendo array com numeros aleatorios ***"
 	msg2: .asciiz "\n*** array preenchido ***"
@@ -37,7 +37,7 @@
 		addi, $t1, $t1, 1
 		
 		# condicao do laco
-		bne $t1, 5, loop_preencher
+		bne $t1, 10, loop_preencher
 	
 	# reinicia o indices
 	addi, $t0, $zero, 0
@@ -62,7 +62,7 @@
 		syscall
 		
 		# se nao for o ultimo imprime chave, senao virgula
-		ble $t1, 3, virgula
+		ble $t1, 8, virgula
 		
 		# exibe a chave - mensagem 4
 		li $v0, 4
@@ -83,7 +83,7 @@
 		addi, $t1, $t1, 1
 		
 		# condicao do laco
-		bne $t1, 5, loop_exibir
+		bne $t1, 10, loop_exibir
 		
 	# encerrar
 	li $v0, 10
