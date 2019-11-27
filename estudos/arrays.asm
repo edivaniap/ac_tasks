@@ -1,8 +1,13 @@
+##############################################################################################
+###                              @AUTHOR: Ediv√¢nia Pontes                                  ###
+###                                 @DATE: 26/11/2019                                      ###
+##############################################################################################
+
 .data
 	# random access memory - ram
-	# s„o blocos contÌguos de memÛria
-	# ram È similar ao array
-	myArray: .space 20 # aloca espaÁo no random access memory
+	# s√£o blocos cont√≠guos de mem√≥ria
+	# ram √© similar ao array
+	myArray: .space 20 # aloca espa√ßo no random access memory
 			   # array de int de tamanho 5 (tam_int * tam_array = 4 bytes * 5)
 	
 	msg1: .asciiz "Insira um valor para A["
@@ -91,4 +96,3 @@
 	# encerrar
 	li $v0, 10
 	syscall
-		
